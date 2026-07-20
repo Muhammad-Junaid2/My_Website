@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Junaid | Python Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Muhammad junaid<span class="logo-accent"></span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+
+    <section class="hero">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">junaid.py</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">&gt;&gt;&gt;</span> <span class="typed" id="typedLine"></span><span class="cursor">|</span></p>
+        </div>
+      </div>
+      <img src="C:\Users\junai\Desktop\python icodeguru\Ass2\junaid.jpeg" alt="Muhammad Junaid profile avatar" class="avatar">
+      <h2>Muhammad Junaid</h2>
+      <p class="subtitle">Python Developer building desktop, mobile &amp; AI-powered applications — now shipping web backends with Flask &amp; Django.</p>
+    </section>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2 class="section-heading">// About</h2>
+      <p class="bio">
+        I'm a Python developer from Faisalabad, Pakistan, with hands-on experience designing and building
+        complete, production-style applications — server-side logic, relational database schemas with SQLite,
+        unit-tested code, and both CLI and GUI interfaces. I'm comfortable integrating multiple data sources into
+        a single system and writing reusable, testable code. Right now I'm extending that foundation into web
+        backend frameworks like Flask and Django and REST API development. I'm certified in Python (Certiport /
+        Pearson) and in Generative AI application development, with additional experience in machine learning
+        and Hugging Face tooling.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-heading">// Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <h3>Python</h3>
+          <p>Advanced — the language I build everything in.</p>
+        </div>
+        <div class="skill-card">
+          <h3>SQLite &amp; Data</h3>
+          <p>Database schema design, CSV data handling.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Flask / Django</h3>
+          <p>Currently building web backend &amp; REST API proficiency.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tkinter &amp; Kivy</h3>
+          <p>Desktop and mobile GUI interfaces.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Machine Learning</h3>
+          <p>ML fundamentals, Generative AI, Hugging Face.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control, unit testing &amp; debugging.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-heading">// Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Inventory Management System</h3>
+          <p>Designed a SQLite schema to model stock, sales, and supplier workflows, with a KPI dashboard for real-time reporting alongside CLI and Tkinter GUI interfaces.</p>
+        </div>
+        <div class="project-card">
+          <h3>Attendance Management System</h3>
+          <p>Dual-storage architecture integrating SQLite and CSV as combined data sources, with attendance analytics and charts generated using matplotlib.</p>
+        </div>
+        <div class="project-card">
+          <h3>English to Urdu Translator</h3>
+          <p>An AI-powered language translation application built with AI APIs behind a web-based interface.</p>
+        </div>
+        <div class="project-card">
+          <h3>Solar Price Prediction System</h3>
+          <p>A machine learning model in Python that predicts solar panel prices from historical market data.</p>
+        </div>
+        <div class="project-card">
+          <h3>Smart Household Management System</h3>
+          <p>Integrated Google Assistant with smart appliances, lighting, and security systems for voice-controlled home automation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2 class="section-heading">// Certifications</h2>
+      <div class="certifications-container">
+        <div class="cert-card">
+          <h3>Professional Certificate</h3>
+          <p>Generative AI Application Developer Certificate</p>
+          <a href="Gen Ai.jpeg" target="_blank" rel="noopener">
+            <img src="Gen Ai.jpeg" alt="Professional certificate thumbnail" class="certificate-img">
+          </a>
+          <a href="Gen Ai.jpeg" target="_blank" rel="noopener" class="cert-button">View Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="live-data">
+      <h2 class="section-heading">// Live from the Internet</h2>
+      <div class="live-grid">
+        <div class="live-card">
+          <h3>GitHub activity</h3>
+          <p id="githubData">Loading…</p>
+          <button id="githubBtn">Fetch GitHub stats</button>
+        </div>
+        <div class="live-card">
+          <h3>Random dev joke</h3>
+          <p id="quoteData">Loading…</p>
+          <button id="quoteBtn">Fetch a joke</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <p>Let's build something.</p>
+    <p>
+      <a href="mailto:junaidmujahid247@gmail.com">junaidmujahid247@gmail.com</a>
+      ·
+      <a href="https://github.com/Muhammad-Junaid2" target="_blank" rel="noopener">GitHub</a>
+      ·
+      <a href="https://www.linkedin.com/in/muhammad-junaid-1k44/" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+    <p class="copyright">&copy; 2026 Muhammad Junaid. Built with HTML, CSS &amp; JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
